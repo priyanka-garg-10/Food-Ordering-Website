@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+        .primary{
+            text-align: center;
+            font-style: oblique;
+            font-size: 2rem;
+        }
+        .secondary{
+            font-style: oblique;
+            color: violet;
+        }
+        .service::before{
+            background: url(/Project1/Screenshot\ \(155\).png)  no-repeat center center/cover;
+            content: " ";
+            position: absolute;
+            height:100%;
+            width: 100%;
+            z-index: -1;
+            opacity: .6;
+        }
+        .jung{
+            border: 2px solid rgb(167, 215, 235);
+            margin:20px 0px;
+           color: white;
+           --box-color:rgb(167, 215, 235);
+            box-shadow: 5px 5px 2px var(--box-color);
+        }
+        .jung::before{
+            background: url(/Project1/pizza-1317699_1280.jpg);
+            content: " ";
+            position: absolute;
+            height:154px;
+            width: 1330px;
+            z-index: -1;
+            opacity: .6;
+        }
+        .desert{
+            border: 2px solid cornsilk;
+            margin:20px 0px;
+            color:whitesmoke;
+            --box-color:cornsilk;
+            box-shadow: 5px 5px 2px var(--box-color);
+        }
+        .desert::before{
+            background: url(/Project1/strawberry-2356660_1280.jpg);
+            content: " ";
+            position: absolute;
+            height:154px;
+            width: 1330px;
+            z-index: -1;
+            opacity: .6;
+        }
+        .south{
+            border: 2px solid powderblue;
+            margin:20px 0px;
+            color: whitesmoke;
+            --box-color:powderblue;
+            box-shadow: 5px 5px 2px var(--box-color);
+        }
+        .south::before{
+            background: url(/Project1/vegetable-gravy-7201669_1920.jpg);
+            content: " ";
+            position: absolute;
+            height:154px;
+            width: 1330px;
+            z-index: -1;
+            opacity: .6;
+        }
+    </style>
+</head>
+<body>
+    <section class="service">
+        <h1 class="primary"> Our Services</h1>
+        <div class="jung">
+            <h2 class="secondary">JUNG FOOD</h2>
+            <ul >
+                <li>Pizza</li>
+                <li>Chap</li>
+                <li>Burgres</li>
+                <li>Spring roll</li>
+            </ul>
+        </div>
+        <div class="desert" >
+            <h2 class="secondary">DESERT</h2>
+            <ul>
+                <li>Rasmlai</li>
+                <li>Gulabjamun</li>
+                <li>Malpua</li>
+                <li>Shrikhand</li>
+            </ul>
+        </div>
+        <div class="south" >   
+            <h2 class="secondary">SOUTH INDIAN</h2>
+            <ul >
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Biryani</li>
+                <li>Appam</li>
+            </ul>
+        </div>
+    </section>
+    <div class="image">
+        <img src="/Project1/Screenshot (158).png" alt="">
+    </div>
+    
+</body>
+</html>

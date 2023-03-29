@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .primary{
+            align-items: center;
+            font-style: oblique;
+            padding:2px 550px;
+            font-size:2rem;
+            font-weight: 1000;
+            color: blue;
+        }
+        #contact::before{
+          content: " ";
+          background: url('/Project1/contact-us-4193523_1280.jpg') no-repeat center center/cover;
+          position: absolute;
+          height:100%;
+          width: 100%;
+          z-index: -1;
+          opacity: .6;
+        }
+        .box{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 34px;
+           margin:20px;
+        }
+        .box form{
+            width:90%;
+        }
+        .box label{
+           font-size: 2.5rem;
+        }
+        .box input{
+            font-size: 2rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section id="contact">
+       <h1 class="primary"> Contact Us</h1>
+       <div class="box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="name">Email: </label>
+                <input type="email" name="name" id="name" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="name">Phone no: </label>
+                <input type="phone" name="name" id="name" placeholder="Enter your phone no">
+            </div>
+        </form>
+       </div>
+    </section>
+</body>
+</html>

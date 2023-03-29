@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanka_project</title>
+   <style>
+    #navbar{
+      display:flex;
+      align-items: center;
+      position: relative;
+    }
+    #navbar::before{
+      content:"";
+      background-color: black;
+      position: absolute;
+      height:100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.3;
+    }
+    
+    #navbar ul{
+      display: flex;
+    }
+    #navbar ul li {
+      list-style: none;
+      font-size: 1.3rem;
+    }
+    #navbar ul li a{
+      text-decoration: none;
+      padding: 3px 12px;
+      color:red;
+      border-radius: 2px;
+      display: block;
+    }
+    #navbar ul li a:hover{
+      color:blue;
+      cursor: pointer;
+      background-color: azure;
+      border-radius: 4px;
+    }
+    #logo img{
+        height: 60px;
+        width: 70px;
+        margin: 3px 6px;
+    }
+    #home{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; 
+      /* padding: 2px 500px;*/
+      height:400px; 
+    }
+    #home::before{
+      content: " ";
+      background: url('/Project1/background-906135_1280.jpg') no-repeat center center/cover;
+      position: absolute;
+      height:100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 1;
+    }
+    .primary{
+      font-size:3rem;
+      padding: 12px 400px;
+      color:rgb(96, 74, 221);
+    }
+    .text{
+      padding: .01px 500px;
+      font-size: 2rem;
+      margin:1px;
+      color: green;
+    }
+    
+   </style>
+</head>
+<body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="/Project1/Screenshot_20221019-141727.png" alt="ndkchdjhc">
+      </div> 
+
+      <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="/Project1/service.html">Services</a></li>
+        <li class="item"><a href="/Project1/about.html">AboutUs</a></li>
+        <li class="item"><a href="/Project1/contact.html">ContactUs</a></li>
+      </ul>
+
+    </nav>
+    <section id="home">
+      <h1 class="primary">Welcome to  <b>DA YUMMY</b></h1>
+      <div>
+        <p class="text">Choti choti bhuk k liye bhi paye bade discounts</p>
+      </div>
+    </section>
+
+</body>
+</html>
